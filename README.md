@@ -56,4 +56,4 @@ The section documents the prerequisites and assumptions for this tutorial.
 
 1. The *Lite* plan is automatically selected for you. Click **Create**.
 
-   ![Click Create](https://user-images.githubusercontent.com/8126772/40881705-8b22467a-669b-11e8-8d33-f3573f27aeca.JPG)
+   ![Click Create](https://user-images.githubusercontent.com/8126772/40881777-fd0b42da-669d-11e8-8578-afbed80d57cf.JPG)
