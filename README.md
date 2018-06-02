@@ -52,8 +52,8 @@ The section documents the prerequisites and assumptions for this tutorial.
 
 1. Login into the IBM Cloud console, navigate to the Catalog, search for Object Storage, and click on it.
 
-   ![Login to IBM Cloud, navigate to the Catalog, search for Object Storage, select plan](/images/pic1.jpg)
+   ![Login to IBM Cloud, navigate to the Catalog, search for Object Storage, select plan](https://user-images.githubusercontent.com/8126772/40881643-f1b6f1d0-6699-11e8-9060-a26cf088689b.JPG)
 
 1. The *Lite* plan is automatically selected for you. Click **Create**.
 
-   ![Click Create](/images/pic2.jpg)
+   ![Click Create](https://user-images.githubusercontent.com/8126772/40881642-f1ac77d2-6699-11e8-958c-95321866afae.JPG)
