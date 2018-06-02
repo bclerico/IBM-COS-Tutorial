@@ -11,7 +11,7 @@ This tutorial provides an overview of setting up and using IBM COS from a Comman
 1. Run scenarios (prefixes, cp, sync, static web hosting, presigned URIs, getting files on S3, etc.)
 
 
-## <a name="pre_reqs">1. Prerequisites</a>
+## <a name="pre-reqs">1. Prerequisites</a>
 The section documents the prerequisites and assumptions for this tutorial.
 1. ASSUMPTION: You are running on MAC/OS.  All examples are demonstrated on MAC/OS, however these instructions can be easily adapted to other platforms.
 
