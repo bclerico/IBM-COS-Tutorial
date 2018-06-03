@@ -3,7 +3,7 @@ This tutorial provides an overview of setting up and using IBM COS from a Comman
 1. [Prerequisites (MAC with Python, IBM Cloud account, etc)](#pre-reqs)
 1. [Download and install the AWS CLI package](#dwnl_awscli)
 1. [Create an instance of the IBM COS Service](#create_cos)
-1. Create and Save Service Credentials
+1. [Create and Save Service Credentials](#create_creds)
 1. Create a Bucket
 1. Upload Files to the bucket
 1. Configure the AWS CLI with IBM COS credentials
@@ -48,7 +48,7 @@ The section documents the prerequisites and assumptions for this tutorial.
 
    `$ aws --version`
 
-## <a name="create_cos">Create an instance of the IBM COS Service</a>
+## <a name="create_cos">3. Create an instance of the IBM COS Service</a>
 
 1. Login into the IBM Cloud console, navigate to the Catalog, search for Object Storage, and click on it.
 
@@ -57,3 +57,27 @@ The section documents the prerequisites and assumptions for this tutorial.
 1. The *Lite* plan is automatically selected for you. Click **Create**.
 
    ![Click Create](https://user-images.githubusercontent.com/8126772/40881777-fd0b42da-669d-11e8-8578-afbed80d57cf.JPG)
+
+## <a name="create_creds">4. Create and Save Service Credentials</a>
+
+In order to access the COS Service from a command line interface you must be able to assert that you have the authority to access the content that COS is managing. This is done through the use of *Service credentials*.
+
+1. Once the Service is provisioned click on *Service credentials*.
+
+   ![Click on Service Credentials](https://user-images.githubusercontent.com/8126772/40881960-bfe534ce-66a2-11e8-8ace-1cb609f625eb.JPG)
+
+1. Click on *New credential*.
+
+   ![Click on New Credential](https://user-images.githubusercontent.com/8126772/40882016-f2cfa580-66a3-11e8-9b8f-db44364f0de8.JPG)
+
+1. Accept the default Credential Name and Role (Writer).  Select *Create New Service ID...* and provide a unique Service ID Name and Description. **DO NOT CLICK ADD**.
+
+   ![Select Create New Service ID](https://user-images.githubusercontent.com/8126772/40882057-2a0bae26-66a5-11e8-870e-c6f569cfc676.JPG)
+
+1. Scroll down and enter the following Configuration Parameter: `{"HMAC":true}`.  This tells the Service that you want to use a Hash-based Message Authentication Code) to access the Service. Click *Add*.
+
+   ![Enter HMAC option and Click Add](https://user-images.githubusercontent.com/8126772/40882110-4b3b382c-66a6-11e8-8f73-5748d2e3bc60.JPG)
+
+1. Click *View Credentials* and *Copy to Clipboard*.
+
+   ![View and Save Credentials](https://user-images.githubusercontent.com/8126772/40882189-42c73108-66a8-11e8-8856-02bfcde402fc.JPG)
