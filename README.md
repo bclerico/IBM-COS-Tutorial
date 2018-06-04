@@ -1,17 +1,17 @@
 # Using IBM Cloud Object Storage from a Command Line Interface
 This tutorial provides an overview of setting up and using IBM COS from a Command Line Interface.
-1. [Prerequisites (MAC with Python, IBM Cloud account, etc)](#pre-reqs)
+1. [Prerequisites and Assumptions)](#pre-reqs)
 1. [Download and install the AWS CLI package](#dwnl_awscli)
 1. [Create an instance of the IBM COS Service](#create_cos)
 1. [Create and Save Service Credentials](#create_creds)
-1. Create a Bucket
+1. [Create a Bucket](#create_bucket)
 1. Upload Files to the bucket
 1. Configure the AWS CLI with IBM COS credentials
 1. Create LM (lazy man) script
 1. Run scenarios (prefixes, cp, sync, static web hosting, presigned URIs, getting files on S3, etc.)
 
 
-## <a name="pre-reqs">1. Prerequisites</a>
+## <a name="pre-reqs">1. Prerequisites and Assumptions</a>
 The section documents the prerequisites and assumptions for this tutorial.
 1. ASSUMPTION: You are running on MAC/OS.  All examples are demonstrated on MAC/OS, however these instructions can be easily adapted to other platforms.
 
@@ -81,3 +81,13 @@ In order to access the COS Service from a command line interface you must be abl
 1. Click *View Credentials* and *Copy to Clipboard*.
 
    ![View and Save Credentials](https://user-images.githubusercontent.com/8126772/40882189-42c73108-66a8-11e8-8856-02bfcde402fc.JPG)
+
+1. Save credentials to a text file for later use.
+
+   ![Save Credentials to a text file](https://user-images.githubusercontent.com/8126772/40933201-ca58a302-67fe-11e8-91cb-cd507c8c0316.JPG)
+
+## <a name="create_bucket">5. Create a Bucket</a>
+
+1. Click *Buckets*; Click *Create bucket*; Provide a unique bucket name; Click *Create*.
+
+   ![Create a bucket](https://user-images.githubusercontent.com/8126772/40936065-106fe91e-6808-11e8-9a5d-b14d56be9487.JPG)
